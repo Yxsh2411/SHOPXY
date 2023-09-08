@@ -3,11 +3,14 @@
     padding: 0;
 }
 header{
+    width: 100%;
     background-color: black;
     color: white;
+    color: burlywood;
 }
 nav ul{
     display: flex;
+    flex-wrap: wrap;
 }
 li{
     padding: 15px 50px;
