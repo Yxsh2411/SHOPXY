@@ -1,75 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     background-color: black;
 }
-nav{
+
+nav {
     display: flex;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     width: 60px;
     padding: 0 35px;
 }
-nav ul{
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.user img {
+    width: 50px;
+    padding: 0 20px;
+
+}
+
+nav ul {
     height: 75px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     padding: 10px 40px;
 }
-nav ul li a{
+
+nav ul li a {
     color: burlywood;
     text-decoration: none;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: rgb(0, 204, 255);
     font-size: larger;
 }
-.container{
-    min-height: calc(100vh - 75px - 10vh);
+
+.box{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px;
+    padding: 5px 30px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    
 }
-.slider{
+
+.box:hover input{
+    width: 250px;
+}
+
+.box input{
+    width: 0;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.container {
+    min-height: calc(100vh - 75px - 10vh);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card{
-    background-color: lightpink;
-    max-width: 90vw;
-    margin: 20px ;
+
+.card {
+    width: 80vw;
+    margin: 20px;
     font-family: 'Source Code Pro', monospace;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.card h2{
+.card1{
+    background-color: lightpink;
+}
+.card2{
+    background-color: #daae8b;
+    
+}
+.card3{
+    background-color: #70e2e6;
+}
+.card h2 {
     margin: 12px 0;
     padding: 20px;
     width: 100%;
     text-align: center;
     font-size: 5vh;
 }
-.card-items{
-    width: auto ;
+
+.card-items {
+    width: auto;
 }
-footer{
+
+footer {
     height: 12vh;
     background-color: black;
     color: white;
     display: flex;
-   justify-content: center;
-   align-items: center;
-   
+    justify-content: center;
+    align-items: center;
+
 }
